@@ -1,0 +1,21 @@
+.hero {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.hero-content {
+  text-align: center;
+  width: 50%;
+
+  h1 {
+    @include animate(fadeInUp, 0.5s, 0.5s);
+  }
+
+  p {
+    @include animate(fadeIn, 0.5s, 0.5s);
+  }
+}

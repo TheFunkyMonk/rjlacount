@@ -1,0 +1,32 @@
+$open-sans: 'Open Sans', Arial, sans-serif;
+$hind: 'Hind', Arial, sans-serif;
+
+$light: 300; // Open Sans
+$regular: 400; // Open Sans
+$medium: 500; // Hind
+$semibold: 600; // Hind
+$bold: 700; // Open Sans, Hind
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+body {
+  color: $black;
+  font-family: $open-sans;
+  font-size: 16px;
+  font-weight: $regular;
+}
+
+h1 {
+  font-family: $hind;
+  font-size: 7em;
+  font-weight: $bold;
+  line-height: 1;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5em;
+}
