@@ -17,12 +17,21 @@
   width: 50%;
 
   h1 {
-    @include animate(fadeInUp, 0.5s, 0.5s);
+    @include animate(fadeIn, 0.5s, 0.5s);
     font-size: 7em;
+    margin: 0;
   }
 
   p {
     @include animate(fadeIn, 0.5s, 0.5s);
     font-size: 1.5em;
+    margin: 0;
   }
+}
+
+.avatar {
+  @include animate(fadeInDown, 0.5s, 0.5s);
+  height: 18em;
+  margin-bottom: 2em;
+  width: 18em;
 }
