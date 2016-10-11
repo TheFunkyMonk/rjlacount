@@ -1,0 +1,24 @@
+.tech {
+  background: $blue-lightest;
+
+  .inner-content {
+    padding: 0.5em 0 0;
+    text-align: center;
+
+    ul {
+      margin-bottom: 3em;
+    }
+
+    @media (min-width: $baby-bear) {
+      display: flex;
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      > section {
+        flex: 1;
+      }
+    }
+  }
+}

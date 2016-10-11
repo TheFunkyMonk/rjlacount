@@ -3,6 +3,34 @@ body {
   margin: 0;
 }
 
-section {
-  padding: 1.5em 2em 1em;
+.main-content-wrapper {
+  background: $white;
+  margin-top: 100vh;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.main-content {
+
+  > section, > a {
+    display: block;
+    padding: 4em 2em;
+  }
+
+  .inner-content {
+    margin: 0 auto;
+
+    @media (min-width: $baby-bear) {
+      width: $baby-bear;
+    }
+
+    @media (min-width: $mama-bear) {
+      width: $mama-bear;
+    }
+
+    @media (min-width: $papa-bear) {
+      width: $papa-bear;
+    }
+  }
 }

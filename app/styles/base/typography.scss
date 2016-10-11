@@ -23,7 +23,7 @@ h1, h2, h3 {
   color: $blue-dark;
   font-family: $hind;
   font-weight: $bold;
-  margin: 0.5em 0 0;
+  margin: 0.25em 0 0;
 }
 
 h1 {
@@ -36,15 +36,33 @@ h1 {
 
 h2 {
   font-size: 3em;
+  text-align: center;
+
+  @media (min-width: $baby-bear) {
+    font-size: 4em;
+  }
 }
 
-p {
+h3 {
+  color: $black;
+  font-size: 1.5em;
+}
+
+p, ul {
   font-size: 1em;
   line-height: 1.5;
 
   @media (min-width: $baby-bear) {
     font-size: 1.25em;
   }
+}
+
+ul {
+  color: $gray;
+  font-size: 1em;
+  line-height: 1.75;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 a {
