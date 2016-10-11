@@ -1,10 +1,15 @@
 .hero {
   align-items: center;
+  background: $blue-dark;
   color: $white;
   display: flex;
+  left: 0;
+  position: fixed;
   height: 100vh;
   justify-content: center;
+  top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .hero-content {
@@ -13,9 +18,11 @@
 
   h1 {
     @include animate(fadeInUp, 0.5s, 0.5s);
+    font-size: 7em;
   }
 
   p {
     @include animate(fadeIn, 0.5s, 0.5s);
+    font-size: 1.5em;
   }
 }

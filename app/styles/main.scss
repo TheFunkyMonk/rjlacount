@@ -1,6 +1,9 @@
 // bower:scss
 // endbower
 
+// Libs
+@import 'base/normalize';
+
 // Variables
 @import 'base/variables';
 
@@ -13,3 +16,4 @@
 @import 'partials/animations';
 @import 'partials/browserupgrade';
 @import 'partials/hero';
+@import 'partials/main-content';

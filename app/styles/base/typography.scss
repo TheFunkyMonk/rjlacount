@@ -19,14 +19,12 @@ body {
   font-weight: $regular;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: $hind;
-  font-size: 7em;
   font-weight: $bold;
-  line-height: 1;
-  margin: 0;
 }
 
-p {
-  font-size: 1.5em;
+h1 {
+  line-height: 1;
+  margin: 0;
 }
