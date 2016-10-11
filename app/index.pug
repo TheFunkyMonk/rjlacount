@@ -3,6 +3,8 @@ extends layouts/default
 block content
   .hero
     .hero-content
+      .arrow
+        img(src="images/arrow.svg")
       img.avatar(src="images/avatar.svg")
       h1 Hi! I'm R.J.
       p Nice to meet you.
@@ -52,4 +54,9 @@ block content
       section.contact
         .inner-content
           h2 Contact
-          p Here's how to get in touch with me.
+          p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com] or fill out the following contact form. I'll get back to you as soon as possible.
+          form.contact-form(action="#")
+            input(type="text" name="name" placeholder="Name")
+            input(type="text" name="email" placeholder="Email")
+            textarea(name="message" placeholder="Message")
+            input(type="submit" value="Submit")
