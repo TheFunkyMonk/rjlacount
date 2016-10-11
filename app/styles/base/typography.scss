@@ -20,6 +20,32 @@ body {
 }
 
 h1, h2, h3 {
+  color: $blue-dark;
   font-family: $hind;
   font-weight: $bold;
+  margin: 0.5em 0 0;
+}
+
+h1 {
+  font-size: 7em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+a {
+  color: $blue-dark;
+  font-weight: $bold;
+  text-decoration: none;
+  transition: color 300ms ease;
+
+  &:hover {
+    color: darken($blue-dark, 10);
+    text-decoration: underline;
+  }
 }
