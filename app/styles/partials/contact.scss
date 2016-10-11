@@ -46,3 +46,23 @@
     height: 9em;
   }
 }
+
+a.btn {
+  @include animate(fadeInUp, 1s, 0.5s);
+  transition: background 300ms ease;
+  background: $white;
+  border: 0;
+  color: $blue-dark;
+  display: block;
+  font-weight: $bold;
+  margin: 2em auto 0;
+  padding: 1em 1.25em;
+  width: 50%;
+
+  &:hover {
+    background: $blue-light;
+    cursor: pointer;
+    cursor: hand;
+    text-decoration: none;
+  }
+}

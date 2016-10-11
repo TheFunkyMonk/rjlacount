@@ -13,7 +13,7 @@ block content
       section.about-me
         .inner-content
           h2 About Me
-          p I’m a front-end web developer and super-nerd in Seattle, Washington. I love Android, craft beer, music, and coffee.
+          p I’m a front-end engineer and super-nerd in Seattle, Washington. I love Android, craft beer, music, and coffee.
           p I currently work for #[a(href="http://www.deloittedigital.com/us/") Deloitte Digital], volunteer for #[a(href="http://seattlepersianrescue.com") Seattle Persian and Himalayan Rescue], and chase around my internet celebrity cat, #[a(href="http://instagram.com/brimleycat") Brimley]. I take pride in my work, and am always keeping myself busy.
       section.tech
         .inner-content
@@ -29,6 +29,7 @@ block content
               li HTML5 / CSS3
               li JavaScript
               li Gulp / Sass / Pug
+              li WordPress
               li AngularJS
           section
             h3 Other Hobbies
@@ -55,9 +56,12 @@ block content
         .inner-content
           h2 Contact
           p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com] or fill out the following contact form. I'll get back to you as soon as possible.
-          form.contact-form(action="#")
+          form.contact-form(action="https://formspree.io/hello@rjlacount.com" method="POST")
+            input(type="text" name="_gotcha" style="display:none")
+            input(type="hidden" name="_next" value="thanks.html")
+            input(type="hidden" name="_subject" value="New Contact Form Submission")
             input(type="text" name="name" placeholder="Name")
-            input(type="text" name="email" placeholder="Email")
+            input(type="text" name="_replyto" placeholder="Email")
             textarea(name="message" placeholder="Message")
             input(type="submit" value="Submit")
       section.footer
