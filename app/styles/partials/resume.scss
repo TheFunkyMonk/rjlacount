@@ -1,14 +1,14 @@
 .resume {
-  background: $blue-lightest;
+  background: $blue-dark;
   text-align: center;
   transition: background 300ms ease;
 
-  &:hover {
-    background: $blue-dark;
-    text-decoration: none;
+  h3 {
+    color: $white;
+  }
 
-    h3 {
-      color: $white;
-    }
+  &:hover {
+    background: darken($blue-dark, 10);
+    text-decoration: none;
   }
 }

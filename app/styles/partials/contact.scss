@@ -16,15 +16,14 @@
 
     &[type="submit"] {
       transition: background 300ms ease;
-      background: $blue-lightest;
+      background: $blue-dark;
       border: 0;
-      color: $black;
+      color: $white;
       font-weight: $bold;
       padding: 1em 1.25em;
 
       &:hover {
-        background: $blue-dark;
-        color: $white;
+        background: darken($blue-dark, 10);
         cursor: pointer;
         cursor: hand;
       }
