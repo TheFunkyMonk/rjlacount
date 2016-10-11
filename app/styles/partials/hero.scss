@@ -14,7 +14,6 @@
 
 .hero-content {
   text-align: center;
-  width: 50%;
 
   h1 {
     @include animate(fadeIn, 0.5s, 0.5s);
