@@ -13,8 +13,8 @@ block content
       section.about-me
         .inner-content
           h2 About Me
-          p I’m a front-end engineer, homebrewer, and super-nerd in Seattle, Washington. I love Android, craft beer, music, and coffee.
-          p I currently work for #[a(href="http://www.deloittedigital.com/us/") Deloitte Digital], volunteer for #[a(href="http://seattlepersianrescue.com") Seattle Persian and Himalayan Rescue], and chase around my internet celebrity cat, #[a(href="http://instagram.com/brimleycat") Brimley]. I take pride in my work, and am always keeping myself busy with some sort of project.
+          p I’m a front-end engineer, homebrewer, and super-nerd in Seattle. I love Android, craft beer, music, and good coffee.
+          p I currently work for #[a(href="http://www.deloittedigital.com/us/") Deloitte Digital], volunteer for #[a(href="http://seattlepersianrescue.com") Seattle Persian and Himalayan Rescue], and chase around my internet celebrity cat, #[a(href="http://instagram.com/brimleycat") Brimley]. I take pride in my work, and am always keeping myself busy with one project or another.
       section.social
         .inner-content
           ul
@@ -50,27 +50,39 @@ block content
             h3 Other Hobbies
             ul
               li Homebrewing
-              li Dreaming
               li Android Tinkering
+              li Dreaming
       section.my-work
         .inner-content
           h2 My Work
           p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
           .project
-            h3 tapdat
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .project-content
+              .img
+                img(src="images/tapdat.jpg")
+              .desc
+                h3 tapdat
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           .project
-            h3 SPHR
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .project-content
+              .img
+                img(src="images/sphr.jpg")
+              .desc
+                h3 SPHR
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           .project
-            h3 Seattle Beer Review
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .project-content
+              .img
+                img(src="images/sbr.jpg")
+              .desc
+                h3 Seattle Beer Review
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       a(href="#").resume
         h3 Download My Resume
       section.contact
         .inner-content
           h2 Contact
-          p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com] or fill out the following contact form. I'll get back to you as soon as possible.
+          p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com], or fill out the following contact form. I'll get back to you as soon as possible.
           form.contact-form(action="https://formspree.io/hello@rjlacount.com" method="POST")
             input(type="text" name="_gotcha" style="display:none")
             input(type="hidden" name="_next" value="thanks.html")
