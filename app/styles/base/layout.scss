@@ -13,7 +13,9 @@ body {
 
 .main-content {
 
-  > section, > a {
+  > div > section,
+  > section,
+  > a {
     display: block;
     padding: 4em 2em;
   }

@@ -23,6 +23,12 @@
       transform: translateY(0);
     }
   }
+
+  &.about-me .about-me,
+  &.my-work .my-work,
+  &.contact .contact {
+    color: $blue-dark;
+  }
 }
 
 .navbar-content {
@@ -61,11 +67,9 @@
     width: 20em;
 
     li {
+      color: $black;
       flex: 1;
-
-      &.active {
-        font-weight: $bold;
-      }
+      transition: color 300ms ease;
     }
   }
 

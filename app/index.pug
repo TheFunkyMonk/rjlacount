@@ -18,88 +18,91 @@ block content
       p Nice to meet you.
   .main-content-wrapper
     .main-content
-      section#about-me.about-me
-        .inner-content
-          h2 About Me
-          p I’m a front-end engineer, homebrewer, and super-nerd in Seattle. I love Android, craft beer, music, and good coffee.
-          p I currently work for #[a(href="http://www.deloittedigital.com/us/") Deloitte Digital], volunteer for #[a(href="http://seattlepersianrescue.com") Seattle Persian and Himalayan Rescue], and chase around my internet celebrity cat, #[a(href="http://instagram.com/brimleycat") Brimley]. I take pride in my work, and am always keeping myself busy with one project or another.
-      section.social
-        .inner-content
-          ul
-            li
-              a.github(href="http://github.com/TheFunkyMonk" title="GitHub")
-                include images/icons/github.svg
-            li
-              a.facebook(href="http://www.facebook.com/rjlacount" title="Facebook")
-                include images/icons/facebook.svg
-            li
-              a.twitter(href="http://twitter.com/rjlacount" title="Twitter")
-                include images/icons/twitter.svg
-            li
-              a.linkedin(href="http://www.linkedin.com/in/rjlacount/" title="LinkedIn")
-                include images/icons/linkedin.svg
-      section.tech
-        .inner-content
-          section
-            h3 What I Do
+      #about-me
+        section.about-me
+          .inner-content
+            h2 About Me
+            p I’m a front-end engineer, homebrewer, and super-nerd in Seattle. I love Android, craft beer, music, and good coffee.
+            p I currently work for #[a(href="http://www.deloittedigital.com/us/") Deloitte Digital], volunteer for #[a(href="http://seattlepersianrescue.com") Seattle Persian and Himalayan Rescue], and chase around my internet celebrity cat, #[a(href="http://instagram.com/brimleycat") Brimley]. I take pride in my work, and am always keeping myself busy with one project or another.
+        section.social
+          .inner-content
             ul
-              li Responsive websites
-              li Dynamic web apps
-              li WordPress themes
-              li SEO
-          section
-            h3 How I Do It
-            ul
-              li HTML5 / CSS3
-              li JavaScript
-              li Gulp / Sass / Pug
-              li WordPress
-              li AngularJS
-          section
-            h3 Other Hobbies
-            ul
-              li Homebrewing
-              li Android tinkering
-              li Home automation
-              li Gaming
-      section#my-work.my-work
-        .inner-content
-          h2 My Work
-          p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
-          .project
-            .project-content
-              .img
-                img(src="images/tapdat.jpg")
-              .desc
-                h3 tapdat
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          .project
-            .project-content
-              .img
-                img(src="images/sphr.jpg")
-              .desc
-                h3 SPHR
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          .project
-            .project-content
-              .img
-                img(src="images/sbr.jpg")
-              .desc
-                h3 Seattle Beer Review
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      a(href="#").resume
-        h3 Download My Resume
-      section#contact.contact
-        .inner-content
-          h2 Contact
-          p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com], or fill out the following contact form. I'll get back to you as soon as possible.
-          form.contact-form(action="https://formspree.io/hello@rjlacount.com" method="POST")
-            input(type="text" name="_gotcha" style="display:none")
-            input(type="hidden" name="_next" value="thanks.html")
-            input(type="hidden" name="_subject" value="New Contact Form Submission")
-            input(type="text" name="name" placeholder="Name")
-            input(type="text" name="_replyto" placeholder="Email")
-            textarea(name="message" placeholder="Message")
-            input(type="submit" value="Submit")
+              li
+                a.github(href="http://github.com/TheFunkyMonk" title="GitHub")
+                  include images/icons/github.svg
+              li
+                a.facebook(href="http://www.facebook.com/rjlacount" title="Facebook")
+                  include images/icons/facebook.svg
+              li
+                a.twitter(href="http://twitter.com/rjlacount" title="Twitter")
+                  include images/icons/twitter.svg
+              li
+                a.linkedin(href="http://www.linkedin.com/in/rjlacount/" title="LinkedIn")
+                  include images/icons/linkedin.svg
+        section.tech
+          .inner-content
+            section
+              h3 What I Do
+              ul
+                li Responsive websites
+                li Dynamic web apps
+                li WordPress themes
+                li SEO
+            section
+              h3 How I Do It
+              ul
+                li HTML5 / CSS3
+                li JavaScript
+                li Gulp / Sass / Pug
+                li WordPress
+                li AngularJS
+            section
+              h3 Other Hobbies
+              ul
+                li Homebrewing
+                li Android tinkering
+                li Home automation
+                li Gaming
+      #my-work
+        section.my-work
+          .inner-content
+            h2 My Work
+            p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
+            .project
+              .project-content
+                .img
+                  img(src="images/tapdat.jpg")
+                .desc
+                  h3 tapdat
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .project
+              .project-content
+                .img
+                  img(src="images/sphr.jpg")
+                .desc
+                  h3 SPHR
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .project
+              .project-content
+                .img
+                  img(src="images/sbr.jpg")
+                .desc
+                  h3 Seattle Beer Review
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        a(href="#").resume
+          h3 Download My Resume
+      #contact
+        section.contact
+          .inner-content
+            h2 Contact
+            p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com], or fill out the following contact form. I'll get back to you as soon as possible.
+            form.contact-form(action="https://formspree.io/hello@rjlacount.com" method="POST")
+              input(type="text" name="_gotcha" style="display:none")
+              input(type="hidden" name="_next" value="thanks.html")
+              input(type="hidden" name="_subject" value="New Contact Form Submission")
+              input(type="text" name="name" placeholder="Name")
+              input(type="text" name="_replyto" placeholder="Email")
+              textarea(name="message" placeholder="Message")
+              input(type="submit" value="Submit")
       section.footer
         p &copy; 2016 R.J. LaCount. All rights reserved.
