@@ -1,5 +1,5 @@
-import welcome from './welcome';
 import waypoints from './waypoints';
+import scroller from './scroller';
 
-welcome();
 waypoints();
+scroller();

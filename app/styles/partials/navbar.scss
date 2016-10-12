@@ -24,10 +24,14 @@
     }
   }
 
-  &.about-me .about-me,
-  &.my-work .my-work,
-  &.contact .contact {
+  &.about-me .about-me a,
+  &.my-work .my-work a,
+  &.contact .contact a {
     color: $blue-dark;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -67,9 +71,13 @@
     width: 20em;
 
     li {
-      color: $black;
       flex: 1;
-      transition: color 300ms ease;
+
+      a {
+        color: $black;
+        font-weight: $regular;
+        transition: color 300ms ease;
+      }
     }
   }
 

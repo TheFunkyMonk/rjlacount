@@ -3,12 +3,13 @@ extends layouts/default
 block content
   #navbar.navbar
     .navbar-content
-      img.avatar(src="images/avatar-dark.svg")
+      a(data-scroll href="#hero-area")
+        img.avatar(src="images/avatar-dark.svg")
       p R.J. LaCount
       ul
-        li.about-me.active About Me
-        li.my-work My Work
-        li.contact Contact
+        li.about-me #[a(data-scroll href="#about-me") About Me]
+        li.my-work #[a(data-scroll href="#my-work") My Work]
+        li.contact #[a(data-scroll href="#contact") Contact]
   #hero-area.hero
     .hero-content
       .arrow
