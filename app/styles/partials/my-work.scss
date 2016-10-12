@@ -1,7 +1,19 @@
 .project-content {
-  display: flex;
+  align-items:flex-start;
   margin-bottom: 2em;
   padding-top: 2em;
+
+  @media (min-width: $baby-bear) {
+    display: flex;
+  }
+
+  h3 {
+    text-align: center;
+
+    @media (min-width: $baby-bear) {
+      text-align: left;
+    }
+  }
 
   .img,
   .desc {
@@ -10,12 +22,28 @@
 
   .img {
     border: 0.5em solid $blue-lightest;
-    flex: 1;
+    margin-bottom: 1em;
+
+    @media (min-width: $baby-bear) {
+      flex: 1;
+      margin-bottom: 0;
+    }
   }
 
   .desc {
-    flex: 4;
-    padding: 0 0 0 1em;
+
+    @media (min-width: $baby-bear) {
+      flex: 4;
+      padding-left: 2em;
+    }
+
+    @media (min-width: $mama-bear) {
+      padding-left: 3em;
+    }
+
+    @media (min-width: $papa-bear) {
+      padding-left: 4em;
+    }
   }
 
   img {
