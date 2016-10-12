@@ -4,6 +4,7 @@ export default function() {
     selector: '[data-scroll]',
     speed: 600,
     easing: 'easeInOutCubic',
-    offset: 96
+    offset: 96,
+    updateURL: false
   });
 }

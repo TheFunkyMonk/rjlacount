@@ -4,7 +4,7 @@
   "dependencies": {
     "modernizr": "~2.8.1",
     "waypoints": "^4.0.1",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^10.1.0"
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^9.4.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
