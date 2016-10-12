@@ -1,3 +1,16 @@
+.project {
+  padding-top: 2em;
+
+  h3 {
+    text-align: center;
+    color: $blue-dark;
+  }
+
+  p:first-child {
+    margin-top: -0.25em;
+  }
+}
+
 .project-content {
   align-items:flex-start;
   margin-bottom: 2em;
@@ -7,22 +20,34 @@
     display: flex;
   }
 
-  h3 {
-    text-align: center;
-
-    @media (min-width: $baby-bear) {
-      text-align: left;
-    }
-  }
-
   .img,
   .desc {
     border-spacing: 1em;
   }
 
   .img {
-    border: 0.5em solid $blue-lightest;
-    margin-bottom: 1em;
+
+    .details {
+      background: $blue-lightest;
+      margin-bottom: 1em;
+      padding: 1em;
+
+      ul {
+        display: flex;
+        margin: 0;
+        text-align: center;
+
+        li {
+          // background: url('../images/icons/check.svg') 0 0 no-repeat;
+          flex: 1;
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    img {
+      display: block;
+    }
 
     @media (min-width: $baby-bear) {
       flex: 1;
@@ -33,7 +58,7 @@
   .desc {
 
     @media (min-width: $baby-bear) {
-      flex: 4;
+      flex: 2;
       padding-left: 2em;
     }
 
@@ -42,7 +67,7 @@
     }
 
     @media (min-width: $papa-bear) {
-      padding-left: 4em;
+      padding-left: 3em;
     }
   }
 

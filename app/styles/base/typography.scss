@@ -76,3 +76,13 @@ a {
     text-decoration: underline;
   }
 }
+
+label {
+  font-family: $hind;
+  font-size: 1em;
+  font-weight: $bold;
+
+  + p, + ul {
+    margin-top: 0.5em;
+  }
+}
