@@ -3,12 +3,12 @@
   background: $white;
   border-bottom: 1px solid $gray-light;
   display: none;
-  height: 4em;
+  height: 6em;
   justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
-  transform: translateY(-4.25em);
+  transform: translateY(-6.25em);
   transition: transform 300ms ease;
   width: 100%;
   z-index: 3;
@@ -45,9 +45,11 @@
   }
 
   .avatar {
-    height: 3em;
+    border: 1px solid $black;
+    border-radius: 50%;
+    height: 3.5em;
     margin: 0 1em 0 0;
-    width: 3em;
+    width: 3.5em;
   }
 
   ul {

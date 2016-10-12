@@ -7,6 +7,6 @@ export default function() {
     handler: function(direction) {
       direction === 'down' ? navbar.classList.add('active') : navbar.classList.remove('active');
     },
-    offset: 64
+    offset: 96
   });
 }
