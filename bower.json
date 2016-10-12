@@ -2,7 +2,8 @@
   "name": "rjlacount",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

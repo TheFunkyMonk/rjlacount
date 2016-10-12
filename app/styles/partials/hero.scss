@@ -10,6 +10,13 @@
   top: 0;
   width: 100vw;
   z-index: 1;
+
+  .avatar {
+    @include animate(fadeInDown, 0.5s, 0.5s);
+    height: 18em;
+    margin-bottom: 2em;
+    width: 18em;
+  }
 }
 
 .hero-content {
@@ -27,13 +34,6 @@
     font-size: 1.5em;
     margin: 0;
   }
-}
-
-.avatar {
-  @include animate(fadeInDown, 0.5s, 0.5s);
-  height: 18em;
-  margin-bottom: 2em;
-  width: 18em;
 }
 
 .arrow {

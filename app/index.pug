@@ -1,6 +1,14 @@
 extends layouts/default
 
 block content
+  #navbar.navbar
+    .navbar-content
+      img.avatar(src="images/avatar.svg")
+      p R.J. LaCount
+      ul
+        li.about-me.active About Me
+        li.my-work My Work
+        li.contact Contact
   .hero
     .hero-content
       .arrow
@@ -10,7 +18,7 @@ block content
       p Nice to meet you.
   .main-content-wrapper
     .main-content
-      section.about-me
+      section#about-me.about-me
         .inner-content
           h2 About Me
           p I’m a front-end engineer, homebrewer, and super-nerd in Seattle. I love Android, craft beer, music, and good coffee.
@@ -33,13 +41,14 @@ block content
       section.tech
         .inner-content
           section
-            h3 What I Make
+            h3 What I Do
             ul
               li Responsive websites
               li Dynamic web apps
               li WordPress themes
+              li SEO
           section
-            h3 How I Make It
+            h3 How I Do It
             ul
               li HTML5 / CSS3
               li JavaScript
@@ -50,9 +59,10 @@ block content
             h3 Other Hobbies
             ul
               li Homebrewing
-              li Android Tinkering
-              li Dreaming
-      section.my-work
+              li Android tinkering
+              li Home automation
+              li Gaming
+      section#my-work.my-work
         .inner-content
           h2 My Work
           p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
@@ -79,7 +89,7 @@ block content
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       a(href="#").resume
         h3 Download My Resume
-      section.contact
+      section#contact.contact
         .inner-content
           h2 Contact
           p Shoot me an email at #[a(href="mailto:hello@rjlacount.com") hello@rjlacount.com], or fill out the following contact form. I'll get back to you as soon as possible.

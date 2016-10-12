@@ -1,0 +1,73 @@
+.navbar {
+  align-items: center;
+  background: $white;
+  border-bottom: 1px solid $gray-light;
+  display: none;
+  height: 4em;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(-4.25em);
+  transition: transform 300ms ease;
+  width: 100%;
+  z-index: 3;
+
+  @media (min-width: $baby-bear) {
+    display: flex;
+  }
+
+  &.active {
+
+    @media (min-width: $baby-bear) {
+      transform: translateY(0);
+    }
+  }
+}
+
+.navbar-content {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  margin: 0 auto;
+  flex-direction: row;
+
+  @media (min-width: $baby-bear) {
+    width: $baby-bear;
+  }
+
+  @media (min-width: $mama-bear) {
+    width: $mama-bear;
+  }
+
+  @media (min-width: $papa-bear) {
+    width: $papa-bear;
+  }
+
+  .avatar {
+    height: 3em;
+    margin: 0 1em 0 0;
+    width: 3em;
+  }
+
+  ul {
+    color: $black;
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+    width: 20em;
+
+    li {
+      flex: 1;
+
+      &.active {
+        font-weight: $bold;
+      }
+    }
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
