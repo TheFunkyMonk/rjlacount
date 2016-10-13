@@ -73,16 +73,20 @@
 
     @media (min-width: $baby-bear) {
       flex: 2;
-      padding-right: 2em;
+      padding-left: 2em;
     }
 
     @media (min-width: $mama-bear) {
-      padding-right: 3em;
+      padding-left: 3em;
     }
 
     @media (min-width: $papa-bear) {
-      padding-right: 3em;
+      padding-left: 3em;
     }
+  }
+
+  label {
+    font-weight: $bold;
   }
 
   img {
@@ -91,6 +95,7 @@
 
   p {
     flex: 1;
+    line-height: 1.45;
   }
 }
 
@@ -101,7 +106,7 @@
     color: $white;
     display: inline-block;
     margin: 0.5em 1em 2em 0;
-    padding: 1.75em 3em;
+    padding: 1.6em 3em;
     transition: background 300ms ease;
     width: auto;
 
@@ -110,4 +115,9 @@
       cursor: hand;
     }
   }
+}
+
+.project-title {
+  border-left: 0.5em solid $blue-lightest;
+  padding-left: 1em;
 }

@@ -71,15 +71,10 @@ block content
             h2 My Work
             p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
             .project
-              h3 tapdat
-              label Digital Tap List
+              .project-title
+                h3 tapdat
+                label Digital Tap List
               .project-content
-                .desc
-                  p tapdat is a digital tap list app, built to be displayed above our office kegerator. It currently supports coffee, cider, and beer.
-                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end, and the data easily extendable into other applications (like a Slackbot!).
-                  .links
-                    a.btn(href="http://tapdat.rjlacount.com/") Live Site
-                    a.btn(href="https://github.com/TheFunkyMonk/tapdat") Code
                 .img
                   img(src="images/work/tapdat.jpg")
                   .details
@@ -88,38 +83,51 @@ block content
                         span Contentful
                       li
                         span Handlebars
-            .project
-              h3 Seattle Persian and Himalayan Rescue
-              label WordPress Site
-              .project-content
                 .desc
-                  p SPHR is a volunteer-run organization that I joined after adopting #[a(href="http://instagram.com/brimleycat") Brimley]. The first order of business was updating their decade-old WordPress site.
-                  p I spent time working with their hosting provider to update their server, and put together a new custom WordPress theme for them to use. The site features a feed of adoptable pets from Petfinder, event calendar from Facebook, and online adoption applications.
+                  label Description
+                  p tapdat is a digital tap list app, built to be displayed above our office kegerator. It currently supports coffee, cider, and beer.
+                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end.
                   .links
-                    a.btn(href="http://seattlepersianrescue.com/") Live Site
+                    a.btn(href="http://tapdat.rjlacount.com/") Live Site
+                    a.btn(href="https://github.com/TheFunkyMonk/tapdat") Code
+            .project
+              .project-title
+                h3 Seattle Persian and Himalayan Rescue
+                label WordPress Site
+              .project-content
                 .img
                   img(src="images/work/sphr.jpg")
                   .details
                     ul
                       li
+                        span PHP
+                      li
                         span WordPress
-            .project
-              h3 Seattle Beer Review
-              label WordPress Site
-              .project-content
                 .desc
-                  p I started Seattle Beer Review to better develop my beer tasting palate, and attempt to bring a better level of structure, design, and organization to the beer tasting world.
-                  p This custom WordPress theme allows for multiple authors to create profiles, author reviews, and assign ratings in accordance to #[a(href="http://seattlebeerreview.com/how-we-review/") BJCP Guidelines].
+                  p SPHR is a volunteer-run rescue organization that I joined after adopting #[a(href="http://instagram.com/brimleycat") Brimley]. The first order of business was updating their decade-old WordPress site.
+                  p I spent time working with their hosting provider to update their server, and put together a new custom WordPress theme for them to use. The site features a feed of adoptable pets from Petfinder, event calendar from Facebook, and online adoption applications.
                   .links
-                    a.btn(href="http://seattlebeerreview.com/") Live Site
-                    a.btn(href="https://github.com/TheFunkyMonk/seattlebeerreview") Code
+                    a.btn(href="http://seattlepersianrescue.com/") Live Site
+            .project
+              .project-title
+                h3 Seattle Beer Review
+                label WordPress Site
+              .project-content
                 .img
                   img(src="images/work/sbr.jpg")
                   .details
                     ul
                       li
+                        span PHP
+                      li
                         span WordPress
-      a(href="#").resume
+                .desc
+                  p I created Seattle Beer Review to better develop my beer tasting palate, and attempt to bring a better level of structure, design, and organization to the beer tasting world.
+                  p With a strong focus on photography, this custom WordPress theme allows for multiple authors to create profiles, author reviews, and assign ratings in accordance to #[a(href="http://seattlebeerreview.com/how-we-review/") BJCP Guidelines].
+                  .links
+                    a.btn(href="http://seattlebeerreview.com/") Live Site
+                    a.btn(href="https://github.com/TheFunkyMonk/seattlebeerreview") Code
+      a(href="resume-rj-lacount.pdf").resume
         h3 Download My Resume
       #contact
         section.contact
