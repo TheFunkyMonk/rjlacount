@@ -6,7 +6,21 @@ html.no-js(lang='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title R.J. LaCount - Front End Engineer in Seattle, WA
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
-    // Place favicon.ico in the root directory
+
+    // Default Meta
+    meta(name='title', content='R.J. LaCount - Front End Engineer in Seattle, WA')
+    meta(name='description', content='Web designer and front end engineer in Seattle, WA. Specializing in mobile-first responsive web design, HTML, CSS, JavaScript, and custom WordPress themes.')
+    meta(name='author', content='R.J. LaCount')
+    meta(name='Copyright', content='Copyright R.J. LaCount 2016. All Rights Reserved.')
+    link(rel='author', href='https://plus.google.com/103073907319915131880/posts')
+
+    // Open Graph meta
+    meta(property='og:title', content='R.J. LaCount - Front End Engineer in Seattle, WA')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='http://www.rjlacount.com')
+    meta(property='og:image', content='http://www.rjlacount.com/images/avatar-social.png')
+    meta(property='og:site_name', content='R.J. LaCount - Front End Engineer in Seattle, WA')
+    meta(property='og:description', content='Web designer and front end engineer in Seattle, WA. Specializing in mobile-first responsive web design, HTML, CSS, JavaScript, and custom WordPress themes.')
 
     // build:css styles/vendor.css
     // bower:css
@@ -28,14 +42,14 @@ html.no-js(lang='')
 
       block content
 
-    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    // Google Analytics
     script.
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-22060307-1');ga('send','pageview');
 
     // build:js scripts/vendor.js
     script(src="../bower_components/waypoints/lib/noframework.waypoints.min.js")
