@@ -14,7 +14,7 @@ block content
     .hero-content
       .arrow
         a(data-scroll href="#about-me")
-          img(src="images/arrow.svg")
+          img(src="images/icons/arrow.svg")
       img.avatar(src="images/avatar.svg")
       h1 Hi! I'm R.J.
       p Nice to meet you.
@@ -72,30 +72,54 @@ block content
             p Most of the code I write professionally is private / under NDA, but here are a few samples of fun projects you can check out.
             .project
               h3 tapdat
+              label Digital Tap List
               .project-content
-                .img
-                  img(src="images/tapdat.jpg")
-                  .details
-                    ul
-                      li Sass
-                      li Handlebars
-                      li Contentful
                 .desc
                   p tapdat is a digital tap list app, built to be displayed above our office kegerator. It currently supports coffee, cider, and beer.
-                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end (only using Handlebars for data binding), as well as easily allowing additional apps to consume the same data set (like Slack bots!).
-              .project-content
+                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end, and the data easily extendable into other applications (like a Slackbot!).
+                  .links
+                    a.btn(href="#") Live Site
+                    a.btn(href="#") Code
                 .img
-                  img(src="images/sphr.jpg")
-                .desc
-                  h3 SPHR
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  img(src="images/work/tapdat.jpg")
+                  .details
+                    ul
+                      li
+                        span Contentful
+                      li
+                        span Handlebars
             .project
+              h3 SPHR
+              label WordPress Site
               .project-content
-                .img
-                  img(src="images/sbr.jpg")
                 .desc
-                  h3 Seattle Beer Review
-                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  p tapdat is a digital tap list app, built to be displayed above our office kegerator. It currently supports coffee, cider, and beer.
+                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end, and the data easily extendable into other applications (like a Slackbot!).
+                  .links
+                    a.btn(href="#") Live Site
+                    a.btn(href="#") Code
+                .img
+                  img(src="images/work/sphr.jpg")
+                  .details
+                    ul
+                      li
+                        span WordPress
+            .project
+              h3 Seattle Beer Review
+              label WordPress Site
+              .project-content
+                .desc
+                  p tapdat is a digital tap list app, built to be displayed above our office kegerator. It currently supports coffee, cider, and beer.
+                  p I worked side-by-side with visual designers, originally from a Sketch file, then iterating in-browser. Using Contentful, the CMS content is provided as an external API, allowing my app to be extremely light on the front end, and the data easily extendable into other applications (like a Slackbot!).
+                  .links
+                    a.btn(href="#") Live Site
+                    a.btn(href="#") Code
+                .img
+                  img(src="images/work/sbr.jpg")
+                  .details
+                    ul
+                      li
+                        span WordPress
         a(href="#").resume
           h3 Download My Resume
       #contact
