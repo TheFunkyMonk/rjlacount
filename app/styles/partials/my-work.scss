@@ -102,9 +102,11 @@
     display: inline-block;
     margin: 0.5em 1em 2em 0;
     padding: 1.75em 3em;
+    transition: background 300ms ease;
     width: auto;
 
     &:hover {
+      background: darken($blue-dark, 10);
       cursor: hand;
     }
   }
