@@ -27,9 +27,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
 
   @media (min-width: $baby-bear) {
+    font-size: 5em;
+  }
+
+  @media (min-width: $mama-bear) {
     font-size: 7em;
   }
 }
