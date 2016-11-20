@@ -18,6 +18,14 @@ body {
   > a {
     display: block;
     padding: 4em 2em;
+
+    &.social {
+      padding: 4em 0.75em;
+
+      @media (min-width: $baby-bear) {
+        padding: 4em 2em;
+      }
+    }
   }
 
   .inner-content {

@@ -19,8 +19,13 @@
       background: $blue-dark;
       border: 0;
       color: $white;
+      font-size: 1.25em;
       font-weight: $bold;
-      padding: 1.75em 2em;
+      padding: 1.15em 2em 1.25em;
+
+      @media (min-width: $baby-bear) {
+        padding: 1.1em 3em 1.2em;
+      }
 
       &:hover {
         background: darken($blue-dark, 10);
