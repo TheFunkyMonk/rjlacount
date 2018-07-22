@@ -145,4 +145,6 @@ block content
               textarea(name="message" placeholder="Message")
               input(type="submit" value="Submit")
       section.footer
-        p &copy; 2017 R.J. LaCount. All rights reserved.
+        p
+          script.
+            document.write('&copy' + (new Date()).getFullYear() + ' R.J. LaCount. All rights reserved.');
