@@ -1,3 +1,3 @@
-# R.J. LaCount Portfolio 2016 Design
+# R.J. LaCount Portfolio Site
 
-Redesign of my personal portfolio site.
+My personal portfolio site.
